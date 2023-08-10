@@ -39,9 +39,14 @@ public class Database {
                 role2.setId(2);
                 role2.setName(ERole.ROLE_USER);
 
+                Role role3 = new Role();
+                role2.setId(3);
+                role2.setName(ERole.ROLE_DOCTOR);
+
                 if(roleRepository.findAll().size()==0){
                     roleRepository.save(role1);
                     roleRepository.save(role2);
+                    roleRepository.save(role3);
                 }
 
             // Generate user super admin
